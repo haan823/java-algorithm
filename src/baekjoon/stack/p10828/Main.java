@@ -21,29 +21,39 @@ public class Main {
                     break;
                 case "pop":
                     if (stack.isEmpty()) {
-                        System.out.println("-1");
+                        bw.write("-1");
+                        bw.newLine();
                     } else {
-                        System.out.println(stack.pop());
+                        bw.write(stack.pop());
+                        bw.newLine();
                     }
                     break;
                 case "size":
-                    System.out.println(stack.size());
+                    bw.write(String.valueOf(stack.size()));
+                    bw.newLine();
                     break;
                 case "empty":
                     if (stack.isEmpty()) {
-                        System.out.println("1");
+                        bw.write("1");
+                        bw.newLine();
                     } else {
-                        System.out.println("0");
+                        bw.write("0");
+                        bw.newLine();
                     }
                     break;
                 case "top":
                     if (stack.isEmpty()) {
-                        System.out.println("-1");
+                        bw.write("-1");
+                        bw.newLine();
                     } else {
-                        System.out.println(stack.peek());
+                        bw.write(stack.peek());
+                        bw.newLine();
                     }
                     break;
             }
         }
+        bw.flush();
+        br.close();
+        bw.close();
     }
 }

@@ -14,7 +14,6 @@ public class Main {
         for (int i = 0; i < N; i++) {
             input[i] = Integer.parseInt(s[i]);
         }
-
         class Tuple {
             int first;
             int second;

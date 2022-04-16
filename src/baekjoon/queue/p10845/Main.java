@@ -3,8 +3,6 @@ package baekjoon.queue.p10845;
 import java.io.*;
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -12,12 +10,12 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
+        Deque<Integer> list = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             String[] strings = br.readLine().split(" ");
-            Deque<Integer> list = new LinkedList<>();
             switch (strings[0]) {
                 case "push":
-                    list.addFirst(Integer.valueOf(strings[1]));
+                    list.addLast(Integer.valueOf(strings[1]));
                     break;
                 case "pop":
                     if (list.isEmpty()) {
@@ -46,7 +44,7 @@ public class Main {
                         bw.write("-1");
                         bw.newLine();
                     } else {
-                        bw.write(list.getFirst());
+                        bw.write(list.getFirst().toString());
                         bw.newLine();
                     }
                     break;
@@ -55,7 +53,7 @@ public class Main {
                         bw.write("-1");
                         bw.newLine();
                     } else {
-                        bw.write(list.getLast());
+                        bw.write(list.getLast().toString());
                         bw.newLine();
                     }
                     break;

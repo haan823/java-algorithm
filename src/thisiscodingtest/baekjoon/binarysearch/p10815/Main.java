@@ -1,4 +1,4 @@
-package thisiscodingtest.baekjoon.twopointer.p10815;
+package thisiscodingtest.baekjoon.binarysearch.p10815;
 
 import java.io.*;
 import java.util.Arrays;

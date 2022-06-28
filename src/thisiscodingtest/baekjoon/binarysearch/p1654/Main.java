@@ -1,4 +1,4 @@
-package thisiscodingtest.baekjoon.twopointer.p1654;
+package thisiscodingtest.baekjoon.binarysearch.p1654;
 
 import java.io.*;
 import java.util.StringTokenizer;

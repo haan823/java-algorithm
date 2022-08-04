@@ -34,3 +34,7 @@
 
  <p>얻을 수 있는 점수의 최댓값을 출력한다.</p>
 
+
+### 참고
+
+![image](https://user-images.githubusercontent.com/57613635/182776391-4ff1b683-5abc-4207-8c48-194f9ac0176b.png)
